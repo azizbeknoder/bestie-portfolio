@@ -4,8 +4,9 @@ import { useEffect } from 'react';
 
 const GlowCard = ({ children , identifier}) => {
   useEffect(() => {
-    const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
-    const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
+    
+    // const CONTAINER = document.querySelector(`.glow-container-${identifier}`);
+    // const CARDS = document.querySelectorAll(`.glow-card-${identifier}`);
 
     const CONFIG = {
       proximity: 40,
@@ -65,8 +66,9 @@ const GlowCard = ({ children , identifier}) => {
     // Cleanup event listener
     return () => {
       document.body.removeEventListener('pointermove', UPDATE);
+      return 'bosh'
     };
-  }, [identifier]);
+  }, [[identifier]]);
 
   return (
     <div className={`glow-container-${identifier} glow-container`}>
