@@ -15,4 +15,4 @@ export const personalData = {
   leetcode: "https://leetcode.com/said3812/",
   devUsername: "azizbeknoder",
   resume: "https://t.me/jurabayevamuslimaxon",
-};
+};      
